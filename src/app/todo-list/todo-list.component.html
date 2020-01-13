@@ -1,0 +1,13 @@
+<h1>To Do List</h1>
+<div>
+  <input type='text'[(ngModel)]='inputValue' placeholder='Enter Your Task Name'>
+  <button 
+    (click)='addTask()'
+>Add Task</button>
+<ol>
+  <li   *ngFor = "let task of list let i = index">
+      {{task.name}}
+    <button  (click)='remove(i)' *ngIf="this.isButtonVisible">Done</button>
+  </li>
+</ol>
+<!-- ng-class="[style1]"  -->

@@ -1,0 +1,10 @@
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+.check-element {
+  opacity: 1;
+  padding: 10px;
+}
+/* .style{
+   color:brown;
+} */
